@@ -157,3 +157,4 @@ $RECYCLE.BIN/
 /DtxUploadClient/Installer/gen_installer.nsi
 /DtxUploadClient/Properties/BuildInformation.cs
 /DtxUploadServer/nbproject/private/
+/packages
