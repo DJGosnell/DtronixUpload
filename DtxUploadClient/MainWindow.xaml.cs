@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DtxUploadClient {
+namespace DtxUpload {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
