@@ -4,11 +4,12 @@ using System.Text;
 using System.IO;
 using System.Threading;
 using Newtonsoft.Json;
+using System.Collections.Concurrent;
 
 namespace DtxUpload {
 	public class Settings {
-		private string settings_file;
-		private Dictionary<string, string> settings = new Dictionary<string, string>();
+		protected string settings_file;
+		private ConcurrentDictionary<string, string> settings = new ConcurrentDictionary<string, string>();
 		private Dictionary<string, List<Action>> value_changed_events = new Dictionary<string, List<Action>>();
 		private bool modified = false;
 		
@@ -27,6 +28,8 @@ namespace DtxUpload {
 				Reload();
 			}
 		}
+
+		protected Settings() { }
 		
 		/// <summary>
 		/// Save the settings to the settings file only if there are changes to be made.
@@ -52,9 +55,11 @@ namespace DtxUpload {
 		}
 
 		/// <summary>
-		/// Load all the settings from the cfg file.
+		/// Load all the settings from the ini file.
 		/// </summary>
 		public void Reload() {
+			settings.Clear();
+
 			using (StreamReader file = new StreamReader(settings_file)) {
 				string line;
 				while ((line = file.ReadLine()) != null) {

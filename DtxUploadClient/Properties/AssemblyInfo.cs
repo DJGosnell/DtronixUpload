@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DtxUploadClient")]
+[assembly: AssemblyTitle("DtronixUpload")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Windows User")]
-[assembly: AssemblyProduct("DtxUploadClient")]
-[assembly: AssemblyCopyright("Copyright © Windows User 2014")]
+[assembly: AssemblyCompany("Dtronix")]
+[assembly: AssemblyProduct("DtronixUpload")]
+[assembly: AssemblyCopyright("Copyright © Dtronix 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
