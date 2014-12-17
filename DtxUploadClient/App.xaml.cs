@@ -21,14 +21,10 @@ namespace DtxUpload {
 
 		private void Application_Startup(object sender, StartupEventArgs e) {
 			settings = new ApplicationSettings(s => {
-				var obj = new[] {
+				s.SetIfEmpty("servers.list", new[] {
 					new { Url = "upload.dtronix.com", Name = "Dtronix Upload Test ", ConnectionCount = 0 }
-				};
-				s.SetIfEmpty("servers.list", obj);
+				});
 			}, true);
-			//ApplicationSettingsBase
-			//string base_dir
-			//settings = new Settings()
 		}
 	}
 }

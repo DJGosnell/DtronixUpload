@@ -58,6 +58,9 @@
     </ApplicationDefinition>
     <Compile Include="ApplicationSettings.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="Xaml\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,6 +73,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Xaml\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -123,34 +130,34 @@
     <Resource Include="Installer\License.txt" />
     <Resource Include="Installer\orange-install.ico" />
     <Resource Include="Installer\Readme.txt" />
-    <Resource Include="Resources\24-image.png" />
-    <Resource Include="Resources\AboutLogoRev0.png" />
-    <Resource Include="Resources\ajax-loader.gif" />
-    <Resource Include="Resources\arrow-incident-blue-24.png" />
-    <Resource Include="Resources\arrow-up-24.png" />
-    <Resource Include="Resources\asset-blue-16-ns.png" />
-    <Resource Include="Resources\asset-blue-24.png" />
-    <Resource Include="Resources\asset-grey-16-ns.png" />
-    <Content Include="Resources\bubble_pop.wav" />
-    <Resource Include="Resources\circle-blue-16-ns.png" />
-    <Resource Include="Resources\clipboard-eye-24.png" />
-    <Resource Include="Resources\drop_to_upload.png" />
-    <Resource Include="Resources\icon_16_tool_b.png" />
-    <Resource Include="Resources\icon_24_control_stop.png" />
-    <Resource Include="Resources\icon_24_em_check.png" />
-    <Resource Include="Resources\icon_24_em_cross.png" />
-    <Resource Include="Resources\icon_24_em_up.png" />
-    <Resource Include="Resources\icon_24_message_warn.png" />
-    <Resource Include="Resources\lightening-16-ns.png" />
-    <Resource Include="Resources\LoginLogoRev2.png" />
-    <Resource Include="Resources\note-16-ns.png" />
-    <Resource Include="Resources\page-24-ns.png" />
-    <Resource Include="Resources\page-pencil-24-ns.png" />
-    <Resource Include="Resources\paper-excerpt-blue-16-ns.png" />
-    <Resource Include="Resources\person-24-ns.png" />
-    <Resource Include="Resources\settings-24-ns.png" />
-    <Resource Include="Resources\shield-blue-broken-24-ns.png" />
-    <Resource Include="Resources\square-green-16-ns.png" />
+    <Resource Include="Xaml\Resources\24-image.png" />
+    <Resource Include="Xaml\Resources\AboutLogoRev0.png" />
+    <Resource Include="Xaml\Resources\ajax-loader.gif" />
+    <Resource Include="Xaml\Resources\arrow-incident-blue-24.png" />
+    <Resource Include="Xaml\Resources\arrow-up-24.png" />
+    <Resource Include="Xaml\Resources\asset-blue-16-ns.png" />
+    <Resource Include="Xaml\Resources\asset-blue-24.png" />
+    <Resource Include="Xaml\Resources\asset-grey-16-ns.png" />
+    <Content Include="Xaml\Resources\bubble_pop.wav" />
+    <Resource Include="Xaml\Resources\circle-blue-16-ns.png" />
+    <Resource Include="Xaml\Resources\clipboard-eye-24.png" />
+    <Resource Include="Xaml\Resources\drop_to_upload.png" />
+    <Resource Include="Xaml\Resources\icon_16_tool_b.png" />
+    <Resource Include="Xaml\Resources\icon_24_control_stop.png" />
+    <Resource Include="Xaml\Resources\icon_24_em_check.png" />
+    <Resource Include="Xaml\Resources\icon_24_em_cross.png" />
+    <Resource Include="Xaml\Resources\icon_24_em_up.png" />
+    <Resource Include="Xaml\Resources\icon_24_message_warn.png" />
+    <Resource Include="Xaml\Resources\lightening-16-ns.png" />
+    <Resource Include="Xaml\Resources\LoginLogoRev2.png" />
+    <Resource Include="Xaml\Resources\note-16-ns.png" />
+    <Resource Include="Xaml\Resources\page-24-ns.png" />
+    <Resource Include="Xaml\Resources\page-pencil-24-ns.png" />
+    <Resource Include="Xaml\Resources\paper-excerpt-blue-16-ns.png" />
+    <Resource Include="Xaml\Resources\person-24-ns.png" />
+    <Resource Include="Xaml\Resources\settings-24-ns.png" />
+    <Resource Include="Xaml\Resources\shield-blue-broken-24-ns.png" />
+    <Resource Include="Xaml\Resources\square-green-16-ns.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
