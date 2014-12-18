@@ -65,7 +65,7 @@ namespace DtxUpload {
 				while ((line = file.ReadLine()) != null) {
 					int split = line.IndexOf('=');
 					if (split != -1) {
-						settings.Add(line.Substring(0, split), line.Substring(split + 1));
+						settings.TryAdd(line.Substring(0, split), line.Substring(split + 1));
 					}
 				}
 
@@ -163,7 +163,7 @@ namespace DtxUpload {
 			if (settings.ContainsKey(name)) {
 				settings[name] = JsonConvert.SerializeObject(value);
 			} else {
-				settings.Add(name, JsonConvert.SerializeObject(value));
+				settings.TryAdd(name, JsonConvert.SerializeObject(value));
 			}
 
 			// Check to see if we have any events queued.

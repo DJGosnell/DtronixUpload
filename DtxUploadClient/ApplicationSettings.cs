@@ -23,12 +23,12 @@ namespace DtxUpload {
 			app_dir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 			object[] company_atts = typeof(ApplicationSettings).Assembly.GetCustomAttributes(typeof(AssemblyCompanyAttribute), true);
 			object[] title_atts = typeof(ApplicationSettings).Assembly.GetCustomAttributes(typeof(AssemblyTitleAttribute), true);
-			object[] version_atts = typeof(ApplicationSettings).Assembly.GetCustomAttributes(typeof(AssemblyVersionAttribute), true);
+			object[] version_atts = typeof(ApplicationSettings).Assembly.GetCustomAttributes(typeof(AssemblyFileVersionAttribute), true);
 
 			if (company_atts.Length == 1 && title_atts.Length == 1 && version_atts.Length == 1) {
 				company = ((AssemblyCompanyAttribute)company_atts[0]).Company;
 				title = ((AssemblyTitleAttribute)title_atts[0]).Title;
-				version = ((AssemblyVersionAttribute)version_atts[0]).Version;
+				version = ((AssemblyFileVersionAttribute)version_atts[0]).Version;
 			} else {
 				throw new Exception("Unable to find company or title information in current assembly.");
 			}
