@@ -42,6 +42,7 @@ namespace DtxUpload {
 					Upgrade(false);
 				}
 				callback(this);
+				Save();
 			} else {
 				Reload();
 			}
