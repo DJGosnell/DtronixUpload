@@ -57,7 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="HttpWebConnector.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="ThrottledStream.cs" />
     <Compile Include="Xaml\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
