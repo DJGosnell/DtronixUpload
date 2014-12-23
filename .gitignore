@@ -158,3 +158,4 @@ $RECYCLE.BIN/
 /DtxUploadClient/Properties/BuildInformation.cs
 /DtxUploadServer/nbproject/private/
 /packages
+/DtxUploadMySqlServer/*.bak
