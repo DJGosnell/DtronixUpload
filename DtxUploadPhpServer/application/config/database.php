@@ -101,7 +101,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '192.168',
+	'hostname' => 'localhost',
 	'username' => 'dtx-upload',
 	'password' => 'YxdVj7zwzA6BPJKC',
 	'database' => '',
